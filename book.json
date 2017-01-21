@@ -1,0 +1,20 @@
+{
+	"variables": {
+		"title": "学习Linux",
+		"theme": "theme-gray",
+		"copyright": "Copyright 2017"
+	},
+	"collapsible_menu":true,
+	"level_number":false,
+	"links": {
+		"gitbook": false,
+		"sharing": {
+			"all":false,
+			"vk": false,
+			"facebook": true,
+			"twitter": true,
+			"google": true,
+			"weibo": true
+		}
+	}
+}
