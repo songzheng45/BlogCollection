@@ -5,12 +5,12 @@ Jexus web server for linux 是一款基于mono环境，运行于Linux/unix操作
 独立版Jexus已经继承了mono运行时，不再需要单独安装mono，这里记录下安装独立版Jexus的过程。
 
 ## 1. 下载最新 Jexus 安装包 
-我下载的最新版是 5.8.2 ，论坛链接写作"Jexus V5.8.2 64位 Linux 专用版"，压缩包名"jexus-5.8.2-x64.tar.gz"。
+我下载的最新版是 5.8.2 ，[论坛](https://www.linuxdot.net/) 里重要下载版块的"Jexus V5.8.2 64位 Linux 专用版"，压缩包名为"jexus-5.8.2-x64.tar.gz"。
 
 ## 2. 上传到 Ubuntu 并解压
-我这里上传到 /home/pkg 目录下，并解压缩。
+上传到 /usr 目录下，并解压缩，解压缩后的文件夹是 jexus。
+
 可以使用 FTP 或 XShell ZMODEM 上传。
-解压缩后的文件夹是 jexus，将它移动到 /usr/ 下。
 
 ## 3. 启动 Jexus
 独立版Jexus不需要安装，解压后启动即可。
