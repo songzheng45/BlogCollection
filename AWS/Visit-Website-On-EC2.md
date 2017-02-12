@@ -17,7 +17,7 @@ Step03：选中下方的“入站”标签，点击“编辑”，弹出“编�
 ![编辑入站规则](http://ojm289en8.bkt.clouddn.com/image/20170212/AWS-EC2-SecurityGroup-Edit-Rules-Inbound-default.png)  
 
 Step04：点击“添加规则”，添加一条类型为“HTTP”的规则，点击“保存”：  
-![添加入站规则]()  
+![添加入站规则](http://ojm289en8.bkt.clouddn.com/image/20170212/AWS-EC2-SecurityGroup-Add-Rules-Inbound.png)  
 
 ## 3. 访问站点
 在 EC2 实例的“描述”中，可以找到 Public DNS (IPv4)，值类似：ec2-xx-xx-xx-xx.us-west-2.compute.amazonaws.com。  

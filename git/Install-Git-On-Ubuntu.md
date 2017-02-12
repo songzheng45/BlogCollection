@@ -1,6 +1,6 @@
-## 在 Ubuntu 上搭建 Git Server
+# 在 Ubuntu 下搭建 Git Server
 
-### 1. 安装 Git
+## 1. 安装 Git
 ```
 sudo apt-get update
 sudo apt-get install git
@@ -10,4 +10,4 @@ sudo apt-get install git
 git --version
 ```
 
-### 2. 添加 git 用户
+## 2. 添加 git 用户

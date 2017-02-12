@@ -1,8 +1,4 @@
-# 如何安装 Jexus 
-
-Jexus web server for linux 是一款基于mono环境，运行于Linux/unix操作系统之上，以支持ASP.NET为核心功能的高性能WEB服务器。
-
-独立版Jexus已经继承了mono运行时，不再需要单独安装mono，这里记录下安装独立版Jexus的过程。
+# 安装 Jexus
 
 ## 1. 下载最新 Jexus 安装包 
 我下载的最新版是 5.8.2 ，[论坛](https://www.linuxdot.net/) 里“重要下载”版块的"Jexus V5.8.2 64位 Linux 专用版"，压缩包名为"jexus-5.8.2-x64.tar.gz"。
