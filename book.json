@@ -6,12 +6,27 @@
     "navs": [
         {
             "name": "books",
-            "title": "Ubuntu笔记",
-            "url": "/dist/books/"
+            "title": "Ubuntu",
+            "url": "/Ubuntu"
+        },
+		{
+            "name": "books",
+            "title": "GIT",
+            "url": "/git"
+        },
+		{
+            "name": "books",
+            "title": "AWS",
+            "url": "/AWS"
+        },
+		{
+            "name": "books",
+            "title": "Jexus",
+            "url": "/Jexus"
         }
     ],
-    "collapsible_menu": true,
-    "level_number": true,
+    "collapsible_menu": false,
+    "level_number": false,
     "styles": {
         "website": "styles/website.css",
         "ebook": "styles/ebook.css",
