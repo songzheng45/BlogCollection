@@ -5,6 +5,7 @@
     * [文件(夹)操作](Ubuntu//Command/File-Directory-Operation.md)
     * [压缩/解压操作](Ubuntu//Command/Compress-and-Decompress.md)
     * [下载](Ubuntu//Command/Wget.md)
+    * [traceroute 命令](Ubuntu//Command/traceroute.md)
 * [Jexus](Jexus/README.md)
     * [安装](Jexus/Install.md)
 * [Git](Git/README.md)
@@ -13,5 +14,5 @@
   * [使用XShell连接EC2实例](AWS/Connect-AWS-With-XShell.md)
   * [使用XShell ZMODOM上传文件](AWS/Upload-Files-By-XShell-ZMODOM.md)
   * [访问 AWS EC2 实例上部署的站点](AWS/Visit-Website-On-EC2.md)
-
-  
+  * [如何删除EC2实例](AWS/How-to-delete-EC2-instance.md)
+  * [ AWS 免费套餐](AWS/Free-AWS.md)

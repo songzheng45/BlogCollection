@@ -1,12 +1,15 @@
 # 使用XShell ZMODOM上传文件
 
-在 XShell 中选择使用 ZMODEM 发送文件，如果没有安装rz命令，则命令行会提示，安装后执行以下命令：
+在 XShell 中选择使用 ZMODEM 发送文件，如果没有安装rz命令，则有如下提示：
 ```
-rz -E
+ubuntu@ip-172-31-24-110:/usr$ rz -E
+The program 'rz' is currently not installed. You can install it by typing:
+sudo apt install lrzsz
 ```
-Windows会弹出选择“打开”文件对话框，选择即可。
 
-如果提示在当前目录没有上传权限，则需要使用命令：
+根据提示安装后，再次重试，或者手动输入命令（主要要使用管理员身份 sudo）：
+
 ```
 sudo rz -E
 ```
+Windows会弹出选择“打开”文件对话框，选择即可。
