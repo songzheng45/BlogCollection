@@ -20,3 +20,4 @@
   * [ASP.NET MVC 从零开始 - 请求处理](ASP.NET-Web-API/ASP-NET-MVC-Handle-Request.md)
   * [ASP.NET Web API 2 中的全局错误处理](ASP.NET-Web-API/Global-Error-Handling-in-ASP.NET-Web-API-2.md)
   * [被请求资源不支持HTTP方法](ASP.NET-Web-API/Solved-The-requested-resource-does-not-support-http-method-GET.md)
+  * [被请求资源不支持HTTP方法](ASP.NET-Web-API/Special-Handle-When-Serialize-or-Deserizlize-In-Web-API.md)
