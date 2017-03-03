@@ -1,4 +1,4 @@
-整理目前流行的跨平台WebApp开发技术的特点，仅供参考。
+整理目前流行的跨平台WebApp开发技术的特点，仅供参考。  
 
 每个框架几乎都包含以下特性：
 - 使用 HTML5 + CSS + JavaScript 开发
@@ -21,12 +21,16 @@ PhoneGap 是 Apache Cordova 的一个分发版，就像 Ubuntu 是 基于 Linux 
 此外，两者提供的CLI工具、项目结构有差异，如：  
 Cordova 把 config.html 放在项目目录下，而 PhoneGap 把它放在www 目录下。
 
-### 优点：
-- 成熟稳定，插件丰富
+**优点**：
+- 开源免费，社区生态成熟，插件丰富
 - 支持离线场景应用
-- 开发工具多
+- 开发工具选择空间大
 
-可搭配组件：  
+**缺点**:
+- 只提供基础访问设备的接口，需要自己搭配其他UI框架和JavaScript框架来搭配
+
+
+
 **UI框架**  
 - [Framework7](https://github.com/nolimits4web/Framework7)
 - [MSUI](http://m.sui.taobao.org/getting-started/) | [Github](https://github.com/sdc-alibaba/SUI-Mobile)
@@ -46,16 +50,16 @@ Cordova 把 config.html 放在项目目录下，而 PhoneGap 把它放在www 目
 官网地址：http://www.ionic.wang/  （有案例）
 Ionic = Cordova + AngularJS + 一套样式库。
 
-### 技术要求
- HTML + CSS + AngularJS
+**技术要求**  
+- HTML + CSS + AngularJS
  
-**优势**：
+**优点**：
 - 基于 Cordova
 - 漂亮的界面，追求性能，专注原生，免费开源
 - Angular JS MVVM 开发理念，数据双向绑定 
 - 继承自 Cordova，可以使用 Cordova 的插件
 
-**劣势**：
+**缺点**：
 - Angular JS 学习路线陡峭
 - Ionic 框架相比于原生的 Cordova 有所差异，Cordova 某些官方插件可能不适用于Ionic
 
@@ -64,18 +68,17 @@ Ionic = Cordova + AngularJS + 一套样式库。
 
 通过AppCan IDE集成开发系统、云端打包器等，快速开发出Android、iOS、WP平台上的移动应用。
 
-
 有两种方式创建项目：IDE 和云端，并且IDE可以同步到云端。  
 免费用户有100M空间、50个应用的限制。
 
-优点
+**优点**
 - 提供一体化解决方案，方便环境搭建、开发、调试、发布
 - 框架自带UI包，包含常用控件样式
 - 框架对UI、动画渲染进行过优化，反应速度快
 - 支持本地打包、云端打包
 - 基于密钥的代码加密
 
-缺点
+**缺点**
 - 不开源，无法修改、优化底层代码 
 - 分大众版和企业版，大众版免费，但功能有缺失，详细见附录
 - 暂不支持自行开发控件/，无法调取android原生功能  
@@ -85,12 +88,13 @@ Ionic = Cordova + AngularJS + 一套样式库。
 - 只能在服务器端发布，无法在本地发布  
 - IOS发布，需要将证书上传至服务器
 
-参考： [Phonegap VS AppCan](http://www.cnblogs.com/wanshutao/p/4242916.html)
+参考：   
+[Phonegap VS AppCan](http://www.cnblogs.com/wanshutao/p/4242916.html)
  
-**使用案例**：
+**使用案例**：  
 我爱我家App 等
 
-**附录**：
+**附录**：  
 企业版和大众版主要有以下几点区别：  
 - 开发环境：  
 企业版走独立的开发环境与打包环境，企业版配备macmini打包服务器，可以实现本地环境下创建项目，调试，打包；  
