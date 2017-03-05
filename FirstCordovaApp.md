@@ -89,7 +89,7 @@ Could not reserve enough space for 2097152KB object heap
 Google 后查到，需要在环境变量中添加一个变量：
 |	变量名  |	  值	   |
 |:--------:|:--------:|
-|_JAVA_OPTIONS|-Xmx512M|
+|\_JAVA_OPTIONS|-Xmx512M|
 
 参考： [StackOverFlow](http://stackoverflow.com/questions/4401396/could-not-reserve-enough-space-for-object-heap)
 
