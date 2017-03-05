@@ -9,7 +9,7 @@ C:\Android\SDK
 >要将 Android SDK 所在目录添加到环境变量中，否则 Cordova 找不到 Android SDK。
 
 ### 安装 Cordova
-因为 Cordova 命令行工具是作为一个 npm 包来分发的，因此需要预先安装 [Node.js](https://nodejs.org/en/download/) ，并且能够调用 **node** 和  **npm**命令 。
+因为 Cordova 命令行工具是作为一个 npm 包来分发的，因此需要预先安装 [Node.js](https://nodejs.org/en/download/) ，并且能够调用 **node** 和  **npm**命令 。  
 假设已经安装好 Node.js 以及 npm，利用 npm 工具能自动下载 Cordova 模块。
 - Windows 下：
 ```
@@ -48,13 +48,13 @@ $ cordova platform ls
 ```
 > cordova requirements
 ```
-可能会出现如下错误信息：
-![](http://ojm289en8.bkt.clouddn.com/image/20170225/Cordova-requirements-Android-SDK-failed.png)
+可能会出现如下错误信息：  
+![](http://ojm289en8.bkt.clouddn.com/image/20170225/Cordova-requirements-Android-SDK-failed.png)  
 意思是没有找到 Android SDK。 如果没有安装在默认位置（一般在 C:\Program Files(x86)\Android\SDK），并且没有配置正确的环境变量，就会提示这样的错误。
 
-打开环境变量窗口，根据提示在“用户变量”里添加一项变量，变量名为“ANDROID_HOME”，值为 Android SDK 安装目录：
-![](http://ojm289en8.bkt.clouddn.com/image/20170225/Android-SDK-Envrionment.png)
-点击“确定”保存，然后重启CMD，切换目录到 Cordova 项目，再次执行命令，可以看到不再有警告和错误提示：
+打开环境变量窗口，根据提示在“用户变量”里添加一项变量，变量名为“ANDROID_HOME”，值为 Android SDK 安装目录：  
+![](http://ojm289en8.bkt.clouddn.com/image/20170225/Android-SDK-Envrionment.png)  
+点击“确定”保存，然后重启CMD，切换目录到 Cordova 项目，再次执行命令，可以看到不再有警告和错误提示：  
 ![](http://ojm289en8.bkt.clouddn.com/image/20170225/Cordova-Check-Android-SDK-Envrionment-Successfully.png)
 
 **检查结果：**

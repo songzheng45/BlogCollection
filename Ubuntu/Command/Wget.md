@@ -1,7 +1,7 @@
 ## Wget 
 
-wget是一个命令行工具——是历史上最快的单线程传输工具，用于下载网站/批量文件，支持HTTP和FTP。 它的任务就是获取互联网。
-首先，基本上所有的面向个人计算机的Linux都带 wget。
+wget是一个命令行工具——是历史上最快的单线程传输工具，用于下载网站/批量文件，支持HTTP和FTP。 它的任务就是获取互联网。  
+首先，基本上所有的面向个人计算机的Linux都带 wget。  
 如果我们想下载ftp里面某个目录里面的所有文件，
 ```
 wget -r ftp://10.8.8.8/movie/
@@ -43,7 +43,7 @@ export http_proxy=http://10.20.30.40:8080
 ```
 wget --proxy=off -r -k http://www.ctan.org/tex-archive/macros/latex/
 ```
-当然，写一个.wgetrc文件也可以，该文件可以从/usr/local/etc里面找到，里面有很详细的注释，我就不多说了。
+当然，写一个.wgetrc文件也可以，该文件可以从/usr/local/etc里面找到，里面有很详细的注释，我就不多说了。  
 下载网页的时候比较麻烦的事情是，有的网页被同时指向了很多遍，那么为了避免多次下载，我们使用
 ```
 wget -nc -r -k http://www.ctan.org/tex-archive/macros/latex/
@@ -56,7 +56,7 @@ wget -nc -np -r -k http://www.ctan.org/tex-archive/macros/latex/
 ```
 wget -nc -np -H -r -k http://www.ctan.org/tex-archive/macros/latex/
 ```
-使得可以在多个host之间span，同时-I和-X可以使得我们仅仅跟踪某些目录或者不跟踪某些目录。如果某些HTML里面你需要的东西不是由这种东西作出来的，你就得使用--follow-tags和--ignore-tags了。
+使得可以在多个host之间span，同时-I和-X可以使得我们仅仅跟踪某些目录或者不跟踪某些目录。如果某些HTML里面你需要的东西不是由这种东西作出来的，你就得使用--follow-tags和--ignore-tags了。  
 嘿，我有个文件里面都是连接，怎么办？要是不是html你只需要
 ```
 wget -i your.file

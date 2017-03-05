@@ -7,17 +7,17 @@
 
 ASP.NET 的请求处理流程
 
-在这篇文章中，我们讨论的问题是 ASP.NET 对 HTTP 请求的处理流程。但是这个流程并不止限于 ASP.NET。许许多多的 Web Server 都是采用了相似的处理流程。这个流程就像是张三在上课的时候给他的好朋友（或者死对头）（我们叫他：赵六）传纸条。首先我假定张三很尊重老师的，不想伤害他脆弱的心灵，于是他无法把纸条直接传到赵六的手中，他必须先把纸条交给离他最近的同学手中，然后依次传递。我们不妨假定这个过程必须经过这几个人：
+在这篇文章中，我们讨论的问题是 ASP.NET 对 HTTP 请求的处理流程。但是这个流程并不止限于 ASP.NET。许许多多的 Web Server 都是采用了相似的处理流程。这个流程就像是张三在上课的时候给他的好朋友（或者死对头）（我们叫他：赵六）传纸条。首先我假定张三很尊重老师的，不想伤害他脆弱的心灵，于是他无法把纸条直接传到赵六的手中，他必须先把纸条交给离他最近的同学手中，然后依次传递。我们不妨假定这个过程必须经过这几个人：  
 >张三 –> 李四 –> 王五 –> 赵六
 
-那么不难想到，纸条回来的路径也需要依次反向的经过相同的人。也就是
+那么不难想到，纸条回来的路径也需要依次反向的经过相同的人。也就是  
 >赵六 –> 王五 –> 李四 –> 张三
 
 那么传纸条开始，首先张三写了一张纸条，其内容是：（少儿不宜，故隐去）。纸条送到了李四的手中，李四是一个有理想有道德的青年，于是拒绝继续传递下去。张三无奈，只得又写了一张新的。其内容是：“下课后是否去一起吃饭？”。纸条送到了李四的手中，李四看后把纸条递给了王五；王五看后将纸条递给了赵六。赵六看后，欣然写到：“好滴”，又把纸条交到了王五手中；王五接到纸条不觉有些心动，于是在纸条上也添了一笔：“我也去！”，就把纸条交给了李四；李四直接将纸条传回张三手中，于是张三看到了如下的内容：“好滴。我也去（王五）”。
 
 我们不妨将张三的行为视为张三向赵六发出的请求。而在请求传递的过程中经过了李四和王五。整个过程一共涉及到了两种角色：第一种角色是赵六，他是请求到达的终结点，也是创建响应的人；而第二种角色就是李四和王五，他们在整个过程中都可以看到请求和响应的内容，并可以对请求或者响应进行过滤或者更改。
 
-在 ASP.NET 中，这两种角色分别称之为：
+在 ASP.NET 中，这两种角色分别称之为：  
 > Http Handler 和 Http Module
 
 **Http Handler** 作为 Request 处理的终结点存在，并负责处理请求以及生成响应。几乎所有的高级 Web 特性，例如页面的生成、MVC 都是 **Http Handler** 。
@@ -46,23 +46,22 @@ ASP.NET 的请求处理流程
 >System.Web.Handlers.TransferRequestHandler
 
 进行处理（这个 **Http handler** 也是 ASP.NET MVC 的基础）；
-对于
->*.aspx
-
-类型的请求，使用
+对于`*.aspx` 类型的请求，使用
 >System.Web.UI.PageHandlerFactory
 
-进行处理（这个 **Http handler** 是 WebForm 的基础）；
+进行处理（这个 **Http handler** 是 WebForm 的基础）；  
 对于 ***.cshtml** 类型的请求，使用
 >System.Web.HttpForbiddenHandler
 
-进行处理（因为客户端是不允许访问服务端代码的）；
+进行处理（因为客户端是不允许访问服务端代码的）；  
 ……
+
 至于 **Http Module** ，可以在 “模块” 中进行观察。在“分组依据”中选择“托管模块”就可以观察到 ASP.NET 注册的 **Http Module** 了。
 
 #### 在 Powershell 中观察
 
-第二种方式是在 Powershell 中使用 IIS Extension 进行观察。这个非常符合我们的胃口，也为 Automation 提供了可能。在观察之前，请确认你已经安装了 Powershell 的 WebAdministration 模块。然后以管理员身份启动 Powershell，在 Powershell 中进行如下输入：
+第二种方式是在 Powershell 中使用 IIS Extension 进行观察。这个非常符合我们的胃口，也为 Automation 提供了可能。  
+在观察之前，请确认你已经安装了 Powershell 的 WebAdministration 模块。然后以管理员身份启动 Powershell，在 Powershell 中进行如下输入：
 ```
 PS C:\> IIS:
 PS IIS:\> cd Sites
@@ -111,7 +110,7 @@ UrlMappingsModule        managedHandler                     System.Web.UrlMappin
 #### 在 web.config 文件中观察
 
 在上一篇中，我们介绍了 web.config 文件是有一种继承体系的。那么我们可以在这个体系涉及的各个文件中查找 **Http handler** 以及 **Http Module** 的配置。
-**Http handler** 的配置在 **.config**  文件的 **<system.webServer>**  **<handlers>** 元素下。
+**Http handler** 的配置在 **.config**  文件的 **<system.webServer>**  **<handlers>** 元素下。  
 例如，我们可以在 IIS 的 applicationHost.config 文件中发现如下的 **HTTP handler** 的映射信息：
 ``` xml
 <system.webServer>
@@ -126,8 +125,8 @@ UrlMappingsModule        managedHandler                     System.Web.UrlMappin
     </handlers>
 </system.webServer>
 ```
-而 **Http Module** 是配置在 **<system.webServer>** 的 **<modules>** 下。
-例如，我们可以在 IIS 的 applicationHost.config 文件中发现如下的 **Http Module** 信息：
+而 **Http Module** 是配置在 **<system.webServer>** 的 **<modules>** 下。  
+例如，我们可以在 IIS 的 applicationHost.config 文件中发现如下的 **Http Module** 信息：  
 ``` xml
 <system.webServer>
     <modules>

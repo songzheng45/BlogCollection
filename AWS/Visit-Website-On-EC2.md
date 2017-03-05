@@ -3,7 +3,7 @@
 由于我是 .NET 开发者，这里使用 Jexus 作为 WebServer，后续可以部署 ASP.NET 项目。
 
 ## 1. 安装并启动 Jexus
-参考 [如何安装Jexus](../HowToInstallJexus/index.html)
+参考 [如何安装Jexus](../Jexus/Install.html)
 
 ## 2. 配置安全组
 

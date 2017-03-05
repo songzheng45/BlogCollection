@@ -35,7 +35,7 @@ public class ProductController : ApiController
 }
 ```
 
-我们知道，自动属性虽然没有定义字段，但是C#编译器会生成相应的私有字段，类似 `private int <Id>k__BackingField`。  
+我们知道，自动属性虽然没有定义字段，但是C#编译器会生成相应的私有字段，类似 `private int <Id>k__BackingField`。    
 我们期望 WebAPI 序列化时将属性名作为 JSON 的键，而这里 WebAPI 序列化的却是编译器生成的私有字段，显然不符合我们的要求。  
 
 奇怪的地方是，如果单独用 Json.NET 类库去序列化，则能得到期望的 JSON，如下：
@@ -90,9 +90,6 @@ public static class WebApiConfig
     }
 }
 ```
-
-## 总结
-善用 Google。  
 
 ------------------------
 参考： http://james.newtonking.com/archive/2012/04/11/json-net-4-5-release-2-serializable-support-and-bug-fixes
