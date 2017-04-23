@@ -6,7 +6,7 @@
 C:\Android\SDK
 ```
 >注意：
->要将 Android SDK 所在目录添加到环境变量中，否则 Cordova 找不到 Android SDK。
+>要将 Android SDK 所在目录添加到环境变量中，否则 Cordova 可能找不到 Android SDK。
 
 ### 安装 Cordova
 因为 Cordova 命令行工具是作为一个 npm 包来分发的，因此需要预先安装 [Node.js](https://nodejs.org/en/download/) ，并且能够调用 **node** 和  **npm**命令 。  
@@ -87,9 +87,7 @@ Could not reserve enough space for 2097152KB object heap
 ```
 
 Google 后查到，需要在环境变量中添加一个变量：
-|	变量名  |	  值	   |
-|:--------:|:--------:|
-|\_JAVA_OPTIONS|-Xmx512M|
+`_JAVA_OPTIONS : -Xmx512M`
 
 参考： [StackOverFlow](http://stackoverflow.com/questions/4401396/could-not-reserve-enough-space-for-object-heap)
 
