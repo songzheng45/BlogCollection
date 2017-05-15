@@ -125,7 +125,7 @@ UrlMappingsModule        managedHandler                     System.Web.UrlMappin
     </handlers>
 </system.webServer>
 ```
-而 **Http Module** 是配置在 **<system.webServer>** 的 **<modules>** 下。  
+而 **Http Module** 是配置在 `<system.webServer>` 的 `<modules>` 下。  
 例如，我们可以在 IIS 的 applicationHost.config 文件中发现如下的 **Http Module** 信息：  
 ``` xml
 <system.webServer>
