@@ -13,7 +13,7 @@ cd ..           //切换到上一级目录
 cd /home/       //切换到指定目录
 ```
 
-### 创建一个文件
+### 创建文件
 ```
 touch filename          // 创建一个名为"filename"的空文件
 ```
@@ -30,7 +30,7 @@ mkdir /home www     // 在 /home 下创建一个名称为"www"的目录
 rmdir test          // 删除空目录test
 ```
 
-### 删除(多个)文件
+### 删除文件
 ```
 rm filename1 filename2      // 删除文件 filename1 和 filename2
 rm -rf [目录名或文件名]       // 强力删除指定目录或文件（如果目录非空，也能够删除）

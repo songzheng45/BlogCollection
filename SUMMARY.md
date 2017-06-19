@@ -1,11 +1,13 @@
 # Summary
 
 * [Ubuntu](Ubuntu/README.md)
+  * [如何安装sh脚本](Ubuntu/how-to-install-sh-script.md)
   * [Ubuntu命令](Ubuntu/Command/README.md)
     * [文件(夹)操作](Ubuntu//Command/File-Directory-Operation.md)
     * [压缩/解压操作](Ubuntu//Command/Compress-and-Decompress.md)
-    * [下载](Ubuntu//Command/Wget.md)
+    * [Wget下载](Ubuntu//Command/wget.md)
     * [traceroute 命令](Ubuntu//Command/traceroute.md)
+    * [关机、重启、注销](Ubuntu//Command/shutdown-logout.md)
 * [Jexus](Jexus/README.md)
     * [安装](Jexus/Install.md)
 * [Git](Git/README.md)

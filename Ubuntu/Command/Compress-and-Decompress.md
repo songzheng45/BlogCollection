@@ -33,19 +33,19 @@ Tar是在Linux中使用得非常广泛的文档打包格式。它的好处就是
 ### TAR.GZ
 
 TAG.GZ 在压缩时不会占用太多CPU，而且可以得到一个非常理想的压缩率（推荐）。  
-压缩目录：
+**压缩**目录：
 
 ```
 # tar -zcvf archive_name.tar.gz directory_to_compress
 ```
 
-解压文件：
+**解压**文件：
 
 ```
 # tar -zxvf archive_name.tar.gz
 ```
 
-默认解压到当前目录，以下命令可以设置解压到指定的目录：
+默认解压到当前目录，以下命令配置解压到指定的目录：
 
 ```
 # tar -zxvf archive_name.tar.gz -C /tmp/extract_here/
