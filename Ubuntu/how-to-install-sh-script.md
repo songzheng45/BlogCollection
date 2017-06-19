@@ -5,7 +5,7 @@
 - `sh file.sh`
 - `bash file.sh`  
 
-如果权限不足，需使用 `sudo` 运行。
+如果权限不足，需使用 `sudo` 运行命令。
 
 如果提示 `command not found`:  
 ```bash
