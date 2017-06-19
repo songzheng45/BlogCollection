@@ -1,3 +1,7 @@
+# SSH连接 EC2 Ubuntu 实例
+
+Windows 下使用 XShell 客户端， macOS 下使用自带终端即可连接。
+
 ## Windows下使用XShell连接EC2实例
 
 ### 1. 创建 EC2 实例
@@ -25,3 +29,9 @@
 
 点击“确定”完成，现在就可以连接 AWS EC2 实例了。  
 第一次连接会弹出提示，是“一次保存”还是“永久保存”密钥，根据自己需要选择即可。  
+
+## macOS 下 ssh 连接 EC2
+示例：
+```
+ssh -i "AwsFree.pem" ubuntu@ec2-12.ap-northeast-1.compute.amazonaws.com
+```
