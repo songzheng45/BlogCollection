@@ -12,11 +12,11 @@ wget -r -nd ftp://10.8.8.8/movie/
 ```
 结果什么目录都没有了，faint！怎么会这样？呵呵，你如果想要这样就让它这样吧，否则使用
 ```
-wget -r -nH ftp://10.8.8.8/movie/
+wget -r -nd ftp://10.8.8.8/movie/
 ```
 恩？movie也不要？OK，那就这样
 ```
-wget -r -nH --cut-dirs=1 ftp://10.8.8.8/movie/
+wget -r -nd --cut-dirs=1 ftp://10.8.8.8/movie/
 ```
 断线了？超时了？ 加个 -c 继续
 ```
