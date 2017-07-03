@@ -33,5 +33,5 @@ Windows 下使用 XShell 客户端， macOS 下使用自带终端即可连接。
 ## macOS 下 ssh 连接 EC2
 示例：
 ```
-ssh -i "AwsFree.pem" ubuntu@ec2-12.ap-northeast-1.compute.amazonaws.com
+ssh -i "filename.pem" ubuntu@ec2-12.ap-northeast-1.compute.amazonaws.com
 ```
