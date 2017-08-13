@@ -1,6 +1,6 @@
 # Summary
 
-* [ubuntu](ubuntu/README.md)
+* [Ubuntu](ubuntu/README.md)
   * [如何安装sh脚本](ubuntu/how-to-install-sh-script.md)
   * [apt 与 apt-get 的区别](ubuntu/difference-between-apt-and-apt-get.md)
   * [ubuntu命令](ubuntu/command/README.md)
@@ -10,7 +10,7 @@
     * [traceroute 命令](ubuntu/command/traceroute.md)
     * [关机、重启、注销](ubuntu/command/shutdown-logout.md)
     * [用户操作](ubuntu//command/user-operation.md)
-* [jexus](jexus/README.md)
+* [Jexus](jexus/README.md)
     * [安装](jexus/Install.md)
 * [Git](Git/README.md)
   * [在ubuntu下安装Git](git/Install-Git-On-ubuntu.md)
