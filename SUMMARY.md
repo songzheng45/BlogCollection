@@ -15,8 +15,7 @@
 * [Git](Git/README.md)
   * [在ubuntu下安装Git](git/Install-Git-On-ubuntu.md)
 * [MySQL](Git/README.md)
-  * [在 macOS 下安装和运行 MySQL](install-and-run-mysql-on-macos.md)
-    
+  * [在 macOS 下安装和运行 MySQL](mysql/install-and-run-mysql-on-macos.md)    
 * [AWS](AWS/README.md)
   * [使用XShell连接EC2实例](AWS/Connect-AWS-With-XShell.md)
   * [使用XShell ZMODOM上传文件](AWS/Upload-Files-By-XShell-ZMODOM.md)
